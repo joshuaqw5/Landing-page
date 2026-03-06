@@ -1,0 +1,215 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#04bd61;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#222;
+color:white;
+padding:15px 50px;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:40px;
+font-weight:bold;
+}
+
+.logo img{
+width:50px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+height:60vh;
+background:url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:black;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+margin-bottom:20px;
+}
+
+.btn{
+background:#ff6600;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+
+/* PRODUCTS */
+
+.products{
+padding:50px;
+text-align:center;
+}
+
+.products h2{
+margin-bottom:30px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.product-card{
+background:rgb(82, 76, 76);
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img{
+width:100%;
+}
+
+.product-card h3{
+margin:10px 0;
+}
+
+.product-card button{
+background:#28a745;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+border-radius:5px;
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials{
+background:#fff;
+padding:50px;
+text-align:center;
+}
+
+.reviews{
+display:flex;
+gap:20px;
+justify-content:center;
+margin-top:20px;
+}
+
+.review{
+background:#f4f4f4;
+padding:20px;
+border-radius:10px;
+width:250px;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#222;
+color:white;
+padding:30px;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-around;
+margin-bottom:20px;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+footer p{
+font-size:14px;
+}
+
+.copyright{
+text-align:center;
+margin-top:10px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width:900px){
+
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.reviews{
+flex-direction:column;
+align-items:center;
+}
+
+.footer-content{
+flex-direction:column;
+text-align:center;
+gap:20px;
+}
+
+}
+
+@media (max-width:500px){
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.hero-text h1{
+font-size:28px;
+}
+
+}
